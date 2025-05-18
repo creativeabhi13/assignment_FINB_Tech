@@ -9,6 +9,12 @@ import Request from './components/Request';
 import Scan from './components/Scan';
 import Split from './components/Split';
 import Rewards from './components/Rewards';
+import DebitCardPage from './components/DebitCard';
+import InviteFriends from './components/Invite';
+import Boosts from './components/Boost';
+import Activity from './components/Activity';
+import Cash from './components/Cash';
+import Help from './components/Help';
 
 
 
@@ -28,12 +34,12 @@ const FinwiseTransactions = () => <h2>Finwise Transactions</h2>;
 const FinwiseInvoices = () => <h2>Finwise Invoices</h2>;
 const FinwiseReports = () => <h2>Finwise Reports</h2>;
 
-const Cards = () => <h2>Debit Card Page</h2>;
-const Invite = () => <h2>Invite Friends Page</h2>;
-const Boosts = () => <h2>Boosts Page</h2>;
-const Activity = () => <h2>Activity Page</h2>;
-const Cash = () => <h2>Cash Page</h2>;
-const Help = () => <h2>Help Page</h2>;
+
+
+
+
+
+
 
 export default function App() {
   return (
@@ -41,6 +47,7 @@ export default function App() {
       <Routes>
         {/* Default nav */}
         <Route path="/" element={<Dashboard/>} />
+        <Route path="/home" element={<Dashboard />} />
         <Route path="/send" element={<Send />} />
         <Route path="/request" element={<Request />} />
         <Route path="/scan" element={<Scan/>} />
@@ -67,9 +74,9 @@ export default function App() {
         <Route path="/finwise/reports" element={<FinwiseReports />} />
 
         {/* Quick Actions */}
-        <Route path="/cards" element={<Cards />} />
-        <Route path="/invite" element={<Invite />} />
-        <Route path="/boosts" element={<Boosts />} />
+        <Route path="/cards" element={<DebitCardPage />} />
+        <Route path="/invite" element={<InviteFriends />} />
+        <Route path="/boosts" element={<Boosts/>} />
         <Route path="/activity" element={<Activity />} />
         <Route path="/cash" element={<Cash />} />
         <Route path="/help" element={<Help />} />
