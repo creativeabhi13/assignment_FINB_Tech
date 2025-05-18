@@ -11,16 +11,14 @@ import BudgetAssistant from '../components/BudgetAssistant';
 
 export default function Dashboard() {
   return (
-    <Layout>
+  
       <Box sx={{ width: '100%' }}>
         <Header name="Sophia" goalPercent={56} />
         <Grid container spacing={3}>
-          {/* Overview Cards full width */}
           <Grid item xs={12}>
             <OverviewCards />
           </Grid>
 
-          {/* Line Chart + Pie Chart */}
           <Grid item xs={12} md={8} lg={9}>
             <IncomeExpenseChart />
           </Grid>
@@ -28,12 +26,10 @@ export default function Dashboard() {
             <CategoryPieChart />
           </Grid>
 
-          {/* Transactions */}
           <Grid item xs={12} md={7} lg={8}>
             <TransactionsTable />
           </Grid>
 
-          {/* Notifications & Budget Assistant */}
           <Grid item xs={12} md={5} lg={4}>
             <Notifications />
             <Box sx={{ mt: 3 }}>
@@ -42,6 +38,6 @@ export default function Dashboard() {
           </Grid>
         </Grid>
       </Box>
-    </Layout>
+ 
   );
 }
