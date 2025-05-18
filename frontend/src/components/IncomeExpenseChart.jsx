@@ -6,7 +6,7 @@ import { Paper, Typography } from '@mui/material';
 const IncomeExpenseChart = () => (
   <Paper sx={{ p: 2, mt: 2 }}>
     <Typography variant="h6">Net Worth Over Time</Typography>
-    <ResponsiveContainer width="100%" height={250}>
+    <ResponsiveContainer width="100%" height={250} >
       <AreaChart data={timeSeries}>
         <XAxis dataKey="month" />
         <YAxis />
