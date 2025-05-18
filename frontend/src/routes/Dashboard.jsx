@@ -11,33 +11,37 @@ import BudgetAssistant from '../components/BudgetAssistant';
 
 export default function Dashboard() {
   return (
-  
-      <Box sx={{ width: '100%' }}>
-        <Header name="Sophia" goalPercent={56} />
-        <Grid container spacing={3}>
-          <Grid item xs={12}>
-            <OverviewCards />
-          </Grid>
+    <Box sx={{ width: '100%', px: { xs: 1, sm: 2, md: 3 } }}>
+      <Grid container justifyContent="center">
+        <Grid item xs={12} sm={10} md={10} lg={12}>
+          <Header name="Sophia" goalPercent={56} />
 
-          <Grid item xs={12} md={8} lg={9}>
-            <IncomeExpenseChart />
-          </Grid>
-          <Grid item xs={12} md={4} lg={3}>
-            <CategoryPieChart />
-          </Grid>
+          <Grid container spacing={3}>
+            <Grid item xs={12}>
+              <OverviewCards />
+            </Grid>
 
-          <Grid item xs={12} md={7} lg={8}>
-            <TransactionsTable />
-          </Grid>
+            <Grid item xs={12}>
+              <IncomeExpenseChart />
+            </Grid>
 
-          <Grid item xs={12} md={5} lg={4}>
-            <Notifications />
-            <Box sx={{ mt: 3 }}>
-              <BudgetAssistant />
-            </Box>
+            <Grid item xs={12}>
+              <CategoryPieChart />
+            </Grid>
+
+            <Grid item xs={12} md={8}>
+              <TransactionsTable />
+            </Grid>
+
+            <Grid item xs={12} md={4}>
+              <Notifications />
+              <Box sx={{ mt: 3 }}>
+                <BudgetAssistant />
+              </Box>
+            </Grid>
           </Grid>
         </Grid>
-      </Box>
- 
+      </Grid>
+    </Box>
   );
 }

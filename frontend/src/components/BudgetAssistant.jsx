@@ -9,7 +9,7 @@ const BudgetAssistant = () => (
   <Paper sx={{ p:2, mt:2 }}>
     <Typography variant="h6">Budget Assistant</Typography>
     {budgets.map((b,i)=>(<Box key={i} sx={{ mt:1 }}>
-      <Typography>{b.category}: $ {b.used} / $ {b.limit}</Typography>
+      <Typography>{b.category}: ₹ {b.used} /₹ {b.limit}</Typography>
       <LinearProgress variant="determinate" value={b.used/b.limit*100} />
     </Box>))}
   </Paper>

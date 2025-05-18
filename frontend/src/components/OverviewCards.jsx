@@ -19,7 +19,7 @@ const OverviewCards = () => {
           <Grid item xs={12} sm={4} key={key}>
             <Paper sx={{ p: 2 }}>
               <Typography color="textSecondary">{key.charAt(0).toUpperCase()+key.slice(1)}</Typography>
-              <Typography variant="h5">${data[key].toLocaleString()}</Typography>
+              <Typography variant="h5">₹ {data[key].toLocaleString()}</Typography>
             </Paper>
           </Grid>
         ))}

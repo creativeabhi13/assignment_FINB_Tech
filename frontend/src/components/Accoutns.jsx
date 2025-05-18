@@ -2,9 +2,9 @@ import React from 'react';
 import { Box, Typography, Card, CardContent, Grid, Avatar } from '@mui/material';
 
 const accounts = [
-  { id: 1, name: 'Checking Account', balance: '$4,500', avatar: 'https://img.icons8.com/color/48/000000/bank-building.png' },
-  { id: 2, name: 'Savings Account', balance: '$12,300', avatar: 'https://img.icons8.com/color/48/000000/savings-account.png' },
-  { id: 3, name: 'Investment Account', balance: '$18,750', avatar: 'https://img.icons8.com/color/48/000000/stock-investment.png' },
+  { id: 1, name: 'Checking Account', balance: '₹ 5,44,500', avatar: 'https://img.icons8.com/color/48/000000/bank-building.png' },
+  { id: 2, name: 'Savings Account', balance: '₹ 2,32,300', avatar: 'https://img.icons8.com/color/48/000000/savings-account.png' },
+  { id: 3, name: 'Investment Account', balance: '₹10,18,750', avatar: 'https://img.icons8.com/color/48/000000/stock-investment.png' },
 ];
 
 export default function Accounts() {

@@ -23,7 +23,7 @@ const TransactionsTable = () => {
               <TableCell>{tx.desc}</TableCell>
               <TableCell sx={{ color: tx.type==='credit'?'green':'red' }}>{tx.type}</TableCell>
               <TableCell>{tx.category}</TableCell>
-              <TableCell sx={{ color: tx.type==='credit'?'green':'red' }}>$ {tx.amount}</TableCell>
+              <TableCell sx={{ color: tx.type==='credit'?'green':'red' }}>₹ {tx.amount}</TableCell>
             </TableRow>
           ))}
         </TableBody>

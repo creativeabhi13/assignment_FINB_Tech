@@ -13,9 +13,9 @@ import {
 
 export default function Split() {
   const [contacts, setContacts] = useState([
-    { id: 1, name: 'Alice', amount: 20 },
-    { id: 2, name: 'Bob', amount: 15 },
-    { id: 3, name: 'Charlie', amount: 25 },
+    { id: 1, name: 'Alice', amount: 2000 },
+    { id: 2, name: 'Bob', amount: 1500 },
+    { id: 3, name: 'Charlie', amount: 2500 },
   ]);
   const [newName, setNewName] = useState('');
   const [newAmount, setNewAmount] = useState('');
@@ -62,7 +62,7 @@ export default function Split() {
           {contacts.map(({ id, name, amount }) => (
             <div key={id}>
               <ListItem>
-                <ListItemText primary={name} secondary={`Amount: $${amount}`} />
+                <ListItemText primary={name} secondary={`Amount: ₹${amount}`} />
               </ListItem>
               <Divider />
             </div>
@@ -70,7 +70,7 @@ export default function Split() {
           <ListItem>
             <ListItemText
               primary="Total"
-              secondary={`$${total}`}
+              secondary={`₹${total}`}
               primaryTypographyProps={{ fontWeight: 'bold' }}
             />
           </ListItem>
